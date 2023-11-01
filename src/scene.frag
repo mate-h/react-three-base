@@ -1,5 +1,5 @@
 uniform float time;
-uniform float speed;
+uniform float value;
 
 vec3 hsv2rgb(vec3 c) {
   vec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
@@ -8,6 +8,5 @@ vec3 hsv2rgb(vec3 c) {
 }
 
 void main() {
-  float modulatedTime = mod(time * speed, 1.0);
-  gl_FragColor = vec4(hsv2rgb(vec3(modulatedTime, 1.0, 1.0)), 1.0);
+  gl_FragColor = vec4(hsv2rgb(vec3(value, 1.0, 1.0)), 1.0);
 }
