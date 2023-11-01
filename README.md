@@ -1,5 +1,13 @@
 # react-three-base
 
+Get started by cloning the template:
+```bash
+pnpx degit mate-h/react-three-base project-name
+cd project-name
+pnpm install
+pnpm run dev
+```
+
 Dependencies:
 ```
 vite
@@ -9,10 +17,4 @@ vite-plugin-glsl
 @react-three/fiber
 @react-three/drei
 r3f-perf
-```
-
-Getting started
-```bash
-pnpm install
-pnpm run dev
 ```
