@@ -5,6 +5,7 @@ import { Uniform } from 'three'
 export const useParams = () => {
   return useControls({
     debug: { value: import.meta.env.DEV, label: 'Debug' },
+    webgpu: { value: true, label: 'WebGPU' },
     value: { value: 0.5, min: 0, max: 1, label: 'Value' },
   })
 }
